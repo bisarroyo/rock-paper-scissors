@@ -1,11 +1,15 @@
 :root {
   --color-primary: #845EC2;
   --color-secondary: #D65DB1;
+  --color-orange: #c54d0e;
+  --color-red: #c50e0e;
+  --color-green: #2c742f;
 }
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 html {
   font-size: 62.5%;
@@ -14,6 +18,12 @@ body {
   background:linear-gradient(var(--color-primary), var(--color-secondary));
   color: #ffffff;
   height: 100vh;
+}
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 h1 {
   font-size: 3rem;
@@ -88,15 +98,15 @@ p {
   background-color: var(--color-primary);
 }
 .red {
-  background-color: red;
+  background-color: var(--color-red);
   transition: .5s;
 }
 .green {
-  background-color: green;
+  background-color: var(--color-green);
   transition: .5s;
 }
 .yellow {
-  background-color: yellow;
+  background-color: var(--color-orange);
   transition: .5s;
 }
 

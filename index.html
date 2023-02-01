@@ -2,28 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Rock Paper and Scissors | Game</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/e29be3b87d.js" crossorigin="anonymous"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Juego piedra, papel y tijera!!!!!</h1>
+      <h1>Game Rock Paper and scissors</h1>
     </header>
     <main>
       <section class="results">
         <div class="results__data">
-          <p class="left">Has ganado:</p>
+          <p class="left">Games won:</p>
           <p id="win-result" class="rigth">0</p>
         </div>
         <div class="results__data">
-          <p class="left">Has empatado:</p>
+          <p class="left">Tied games:</p>
           <p id="draw-result" class="rigth">0</p>
         </div>
         <div class="results__data">
-          <p class="left">Has perdido:</p>
+          <p class="left">Lost games:</p>
           <p id="loss-result" class="rigth">0</p>
         </div>
       </section>
@@ -31,19 +35,19 @@
         <div class="machine-area">
           <div class="machine-area__box">
             <div id="machine-area__result" class="machine-area__result">
-              <p id="result-game">Esperando...</p>
+              <p id="result-game">Waiting...</p>
             </div>
             <div id="machine" class="machine-area__icon">
               <i class="fas fa-hourglass-half icon-machine"></i>
             </div>
             <div class="machine-area__selection">
-              <p id="resultado">Esperando selección</p>
+              <p id="resultado">Waiting for selection</p>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <p class="option-text">Selecciona tu opción:</p>
+        <p class="option-text">Select your option:</p>
         <div class="game-selection">
           <div class="game-selection__box">
             <button class="game__icon" id="stone">
