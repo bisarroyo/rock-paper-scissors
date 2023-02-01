@@ -5,9 +5,60 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/e29be3b87d.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <h1>Juego piedra, papel y tijera!!!!!</h1>
+    </header>
+    <main>
+      <section class="results">
+        <div class="results__data">
+          <p class="left">Has ganado:</p>
+          <p id="win-result" class="rigth">0</p>
+        </div>
+        <div class="results__data">
+          <p class="left">Has empatado:</p>
+          <p id="draw-result" class="rigth">0</p>
+        </div>
+        <div class="results__data">
+          <p class="left">Has perdido:</p>
+          <p id="loss-result" class="rigth">0</p>
+        </div>
+      </section>
+      <section>
+        <div class="machine-area">
+          <div class="machine-area__box">
+            <div id="machine-area__result" class="machine-area__result">
+              <p id="result-game">Esperando...</p>
+            </div>
+            <div id="machine" class="machine-area__icon">
+              <i class="fas fa-hourglass-half icon-machine"></i>
+            </div>
+            <div class="machine-area__selection">
+              <p id="resultado">Esperando selección</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <p class="option-text">Selecciona tu opción:</p>
+        <div class="game-selection">
+          <div class="game-selection__box">
+            <button class="game__icon" id="stone">
+              <i class="fas fa-hand-rock icon-1"></i>
+            </button>
+            <button class="game__icon" id="paper">
+              <i class="fas fa-hand-paper icon-1"></i>
+            </button>
+            <button class="game__icon" id="scissors">
+              <i class="fas fa-hand-scissors icon-1"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
